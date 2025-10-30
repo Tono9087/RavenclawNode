@@ -23,10 +23,9 @@ const navBarStyle = {
   flexDirection: 'row',
   justifyContent: 'space-around',
   margin: '16px',
-  backgroundColor: 'darkblue',
+  backgroundColor: 'transparent',
   listStyleType: 'none',
   borderRadius: '8px',
-  border: '2px solid #7E7E7E',
 }
 
 const ItemNavBarStyle = {
@@ -85,11 +84,13 @@ const MainContent = (props) => {
 }
 
 const AsideContent = (props) => {
+  if (!props.data) return null;
+
   return(
     <aside>
       <img
-        src={props.data ? props.data.imageAsset : ''}
-        alt={props.data ? props.data.name : ''}
+        src={props.data.imageAsset}
+        alt={props.data.name}
         style={{ width: '150px', height: '150px', borderRadius: '8px', margin: '16px' }}
       />
     </aside>
