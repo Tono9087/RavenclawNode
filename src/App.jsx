@@ -5,7 +5,6 @@ import Correcaminos from './assets/Images/Correcaminos.jpg'
 import Centinelas from './assets/Images/Centinelas.jpg'
 
 
-//Vamos a crear los estilos de nuestro sitio
 const rootContainer = {
   backgroundColor: '#0E1A40',
   display: 'flex',
